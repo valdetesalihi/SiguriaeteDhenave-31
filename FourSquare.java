@@ -42,6 +42,41 @@ seq=seq+TL[i][j];
 }
 }
 }
+  
+for(int i=0;i<5;i++) {
+    for(int j=0;j<10;j++) {
+    if(j>4) {
+    int k=j-5;
+    seq=seq+BR[i][k];
+    }
+    else {
+    seq=seq+BL[i][j];
+    }
+    }
+    }
+    int ctr=-1;for(int i=0;i<10;i++)
+    for(int j=0;j<10;j++) {
+    ctr++;
+    aggregate[i][j]=seq.charAt(ctr);
+    }
+
+    for(int i=0;i<pt.length();i=i+2) {
+        int row=0, col=0;
+        for(int j=0;j<5;j++)
+        for(int k=0;k<5;k++) {
+        if(TL[j][k]==pt.charAt(i)) {
+        row = j;
+        break;
+        }
+        if(row!=0)
+        break;
+        }
+        for(int j=0;j<5;j++)
+        for(int k=0;k<5;k++) {
+        if(BR[j][k]==pt.charAt(i+1)) {
+        col = k+5;
+        break;
+        }
 
 
 
