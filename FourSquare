@@ -13,7 +13,35 @@ static String encrypt(String pt, String key1, String key2) {
         int m=(int)(i/5);
         TR[m][n]=key1.charAt(i);
     }
+n=-1;
+for(int i=0;i<key2.length();i++) {
+n+=1;
+n%=5;
+int m=(int)(i/5);
+BL[m][n]=key2.charAt(i);
 
+}
+int num = 64;
+for(int i=0;i<5;i++)
+for(int j=0;j<5;j++) {
+num++;
+if(num==74)
+num++;
+TL[i][j]=(char)num;
+BR[i][j]=(char)num;
+}
+String seq = new String("");
+for(int i=0;i<5;i++) {
+for(int j=0;j<10;j++) {
+if(j>4) {
+int k=j-5;
+seq=seq+TR[i][k];
+}
+else {
+seq=seq+TL[i][j];
+}
+}
+}
 
 
 
