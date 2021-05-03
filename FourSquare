@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class FourSquare{
+static char[][] aggregate = new char[10][10];
+static char[][] TL=new char[5][5], TR=new char[5][5];
+static char[][] BL=new char[5][5], BR=new char[5][5];
+//encryption function
+static String encrypt(String pt, String key1, String key2) {
+    String encpt = new String("");
+    int n=-1;
+    for(int i=0;i<key1.length();i++) {
+        n+=1;
+        n%=5;
+        int m=(int)(i/5);
+        TR[m][n]=key1.charAt(i);
+    }
+
+
+
+
+
+
+
+
+    //Kujdes, Mos shkruani poshte!!!
+
+public static void main(String[] args) {
+System.out.print("Enter plaintext: ");
+Scanner scan = new Scanner(System.in);
+String pt = scan.nextLine();
+System.out.print("Enter key 1: ");
+String key1 = scan.nextLine();
+System.out.print("Enter key 2: ");
+String key2 = scan.nextLine();
+String encpt = encrypt(pt,key1,key2);
+String decpt = decrypt(encpt,key1,key2);
+System.out.println("Encrypted text: "+encpt);
+System.out.println("Decrypted text: "+decpt);
+scan.close();
+}
+}
