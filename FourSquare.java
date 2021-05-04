@@ -108,7 +108,23 @@ for(int k=0;k<5;k++) {
 }
 return encpt;
 }
-}
+
+//funksioni i dekriptimit
+static String decrypt(String encpt, String key1, String key2) {
+    String decpt = new String("");
+    for(int i=0; i<encpt.length(); i=i+2) {
+        int row=0, col=0;
+        for(int j=0;j<5;j++)
+        for(int k=0;k<5;k++) {
+            if(TR[j][k]==encpt.charAt(i)) {
+                row = j;
+                break;
+            }
+            if(row!=0)
+            break;
+        }
+
+
 
 
 
