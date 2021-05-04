@@ -93,7 +93,10 @@ break;
 if(row!=0)
 break;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 20772e052bea8689de52aa1b69bba6bf56eefc42
 for(int j=0;j<5;j++)
 for(int k=0;k<5;k++) {
   if(TL[j][k]==pt.charAt(i)) {
