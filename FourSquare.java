@@ -77,6 +77,23 @@ for(int i=0;i<5;i++) {
         col = k+5;
         break;
         }
+        if(col!=0)
+break;
+
+}
+encpt = encpt + Character.toString(aggregate[row][col]);
+
+row = 0; col = 0;
+for(int j=0;j<5;j++)
+for(int k=0;k<5;k++) {
+if(BR[j][k]==pt.charAt(i+1)) {
+row = j+5;
+break;
+}
+if(row!=0)
+break;
+
+}
 
 
 
