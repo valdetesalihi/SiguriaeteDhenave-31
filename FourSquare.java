@@ -92,7 +92,7 @@ break;
 }
 if(row!=0)
 break;
-
+}
 for(int j=0;j<5;j++)
 for(int k=0;k<5;k++) {
   if(TL[j][k]==pt.charAt(i)) {
