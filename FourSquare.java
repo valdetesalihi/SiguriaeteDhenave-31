@@ -82,7 +82,7 @@ break;
 
 }
 encpt = encpt + Character.toString(aggregate[row][col]);
-
+    
 row = 0; col = 0;
 for(int j=0;j<5;j++)
 for(int k=0;k<5;k++) {
@@ -92,6 +92,7 @@ break;
 }
 if(row!=0)
 break;
+}
 
 for(int j=0;j<5;j++)
 for(int k=0;k<5;k++) {
@@ -108,8 +109,8 @@ for(int k=0;k<5;k++) {
 }
 return encpt;
 }
-
 }
+
 
 
 
