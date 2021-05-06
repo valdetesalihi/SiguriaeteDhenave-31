@@ -148,7 +148,25 @@ static String decrypt(String encpt, String key1, String key2) {
     }
     if(row!=0)
     break;
+}
+for(int j=0;j<5;j++)
+for(int k=0;k<5;k++) {
 
+if(TR[j][k]==encpt.charAt(i)) {
+col = k+5;
+break;
+}
+if(col!=0)
+break;
+
+}
+decpt = decpt +
+
+Character.toString(aggregate[row][col]);
+
+}
+return decpt;
+}
 
 
 
