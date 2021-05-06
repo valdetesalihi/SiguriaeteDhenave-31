@@ -139,7 +139,15 @@ static String decrypt(String encpt, String key1, String key2) {
 
     }
 
-
+    row = 0; col = 0;
+    for(int j=0;j<5;j++)
+    for(int k=0;k<5;k++) {
+        if(BL[j][k]==encpt.charAt(i+1)){
+           row = j+5;
+           break;
+    }
+    if(row!=0)
+    break;
 
 
 
