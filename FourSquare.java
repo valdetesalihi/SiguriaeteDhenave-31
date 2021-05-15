@@ -156,3 +156,21 @@ static String funksioni_dekriptimit(String enkriptimi, String qelesi1, String qe
     }
     return dekriptimi;
 }
+
+//main
+public static void main(String[] args) {
+    System.out.print("Detyra e pare nga DataSecurity: Enkriptimi&Dekriptimi i FourSquare Cipher\n");
+    System.out.print("Shenoni Plaintext-in: ");
+    Scanner scan = new Scanner(System.in);
+    String teksti = scan.nextLine();
+    System.out.print("Shenoni Celesin 1: ");
+    String qelesi1 = scan.nextLine();
+    System.out.print("Shenoni Celesin 2: ");
+    String qelesi2 = scan.nextLine();
+    String enkriptimi = funksioni_enkriptimit(teksti,qelesi1,qelesi2);
+    String dekriptimi = funksioni_dekriptimit(enkriptimi,qelesi1,qelesi2);
+    System.out.println("Teksti i enkriptuar: "+enkriptimi);
+    System.out.println("Teksti i dekriptuar: "+dekriptimi);
+    scan.close();
+}
+}
