@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Kuadranti{
+public class FourSquare{
 static char[][] grumbullimi = new char[10][10];
 
 static char[][] tpleft=new char[5][5], tpright=new char[5][5];
@@ -104,3 +104,55 @@ static String funksioni_enkriptimit(String teksti, String qelesi1, String qelesi
             }
             return enkriptimi;
         }
+    
+    //implementimi i funksionit te dekriptimit
+static String funksioni_dekriptimit(String enkriptimi, String qelesi1, String qelesi2) {
+    String dekriptimi = new String("");
+    for(int i=0; i<enkriptimi.length(); i=i+2) {
+        int rreshtat=0, kolonat=0;
+        for(int j=0;j<5;j++)
+        for(int k=0;k<5;k++) {
+            if(tpright[j][k]==enkriptimi.charAt(i)) {
+                rreshtat = j;
+                break;
+            }
+            if(rreshtat!=0)
+            break;
+        }
+        for(int j=0;j<5;j++)
+        for(int k=0;k<5;k++) {
+            if(btmleft[j][k]==enkriptimi.charAt(i+1))
+            {
+
+                kolonat = k;
+                break;
+            }
+            if(kolonat!=0)
+            break;
+        }
+        dekriptimi = dekriptimi + Character.toString(grumbullimi[rreshtat][kolonat]);
+        rreshtat = 0; kolonat = 0;
+        for(int j=0;j<5;j++)
+        for(int k=0;k<5;k++) {
+            if(btmleft[j][k]==enkriptimi.charAt(i+1))
+            {
+                rreshtat = j+5;
+                break;
+            }
+            if(rreshtat!=0)
+            break;
+        }
+        for(int j=0;j<5;j++)
+        for(int k=0;k<5;k++)
+        {
+            if(tpright[j][k]==enkriptimi.charAt(i)) {
+                kolonat = k+5;
+                break;
+            }
+            if(kolonat!=0)
+            break;
+        }
+        dekriptimi = dekriptimi + Character.toString(grumbullimi[rreshtat][kolonat]);
+    }
+    return dekriptimi;
+}
