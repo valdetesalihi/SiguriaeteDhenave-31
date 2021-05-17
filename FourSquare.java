@@ -12,7 +12,7 @@ static String funksioni_enkriptimit(String teksti, String qelesi1, String qelesi
     int n=-1;
     for(int i=0;i<qelesi1.length();i++) {
         n+=1;
-        n%=5;
+        n%=5; 
         int m=(int)(i/5);
         tpright[m][n]=qelesi1.charAt(i);
     }
@@ -174,3 +174,5 @@ public static void main(String[] args) {
     scan.close();
 }
 }
+
+//
