@@ -209,3 +209,47 @@ public class Main extends Application {
         TextField celesi2Input = new TextField();
         GridPane.setConstraints(celesi2Input,1,2);
 
+ // Shfaqja e textit te enkriptuar dhe dekriptuar
+
+ Label enkriptimi = new Label("Teksti i enkriptuar:");
+ GridPane.setConstraints(enkriptimi,0,4);
+
+ Label dekriptimi = new Label("Teksti i dekriptuar:");
+ GridPane.setConstraints(dekriptimi,0,5);
+
+ //Butoni per ekzekutim
+ Button finishButton = new Button("Run");
+ GridPane.setConstraints(finishButton,1,3);
+
+
+ finishButton.setOnAction(e -> {
+
+     String pt = plaintextInput.getText();
+  
+     String k1 = celesi1Input.getText();
+     String k2 = celesi2Input.getText();
+
+     String encrypted_text = funksioni_enkriptimit(pt,k1,k2);
+     String decrypted_text = funksioni_dekriptimit(encrypted_text,k1,k1);
+
+     enkriptimi.setText("Teksti i enkriptuar: " + encrypted_text);
+     dekriptimi.setText("Teksti i dekriptuar: " + decrypted_text);
+
+ });
+
+
+
+
+ grid.getChildren().addAll(plainTextLabel,plaintextInput,celesi1Label,celesi1Input,celesi2Label,celesi2Input,finishButton,enkriptimi,dekriptimi);
+
+ Scene scene = new Scene(grid,500,500);
+ window.setScene(scene);
+ window.show();
+
+}
+
+
+public static void main(String[] args) {
+ launch(args);
+}
+}
