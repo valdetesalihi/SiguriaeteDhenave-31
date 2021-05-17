@@ -171,3 +171,41 @@ public class Main extends Application {
         }
         return dekriptimi;
     }
+
+    Stage window;
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+
+
+
+        window = primaryStage;
+        window.setTitle("Four Square");
+
+        GridPane grid = new GridPane();
+        grid.setPadding(new Insets(10,10,10,10));
+        grid.setVgap(8);
+        grid.setHgap(10);
+
+        // item 1
+        Label plainTextLabel = new Label("PlainText");
+        GridPane.setConstraints(plainTextLabel,0,0);
+
+        TextField plaintextInput = new TextField();
+        GridPane.setConstraints(plaintextInput,1,0);
+
+
+        // item 2
+        Label celesi1Label = new Label("Celesi 1");
+        GridPane.setConstraints(celesi1Label,0,1);
+
+        TextField celesi1Input = new TextField();
+        GridPane.setConstraints(celesi1Input,1,1);
+
+
+        // item 3
+        Label celesi2Label = new Label("Celesi 2");
+        GridPane.setConstraints(celesi2Label,0,2);
+
+        TextField celesi2Input = new TextField();
+        GridPane.setConstraints(celesi2Input,1,2);
+
