@@ -7,6 +7,7 @@ static char[][] grumbullimi = new char[10][10];
 static char[][] tpleft=new char[5][5], tpright=new char[5][5];
 static char[][] btmleft=new char[5][5], btmright=new char[5][5];
 
+//Implementimi i funksionit te enkriptimit
 static String funksioni_enkriptimit(String teksti, String qelesi1, String qelesi2) {
     String enkriptimi = new String("");
     int n=-1;
@@ -80,7 +81,8 @@ static String funksioni_enkriptimit(String teksti, String qelesi1, String qelesi
                     break;
                 }
                 if(kolonat!=0)
-                break;}
+                break;
+            }
                 enkriptimi = enkriptimi + Character.toString(grumbullimi[rreshtat][kolonat]);
                 rreshtat = 0; kolonat = 0;
                 for(int j=0;j<5;j++)
@@ -176,4 +178,4 @@ public static void main(String[] args) {
 }
 }
 
-//
+//Celesi 1: ZGPTFOIHMUWDRCNYKEQAXVSBL ; Celesi 2: MFNBDCRHSAXYOGVITUEWLQZKP
