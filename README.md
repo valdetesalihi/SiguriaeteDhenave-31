@@ -3,7 +3,7 @@
 # Faza 1
 Four-square Cipher eshte teknik manuale e kriptimit simetrik e cila perdor kater matrica 5x5.
 Kodi i Four-square Cipher eshte zhvilluar me dy input celesa, pas futjes se celesave ndodh procesi i enkriptimit dhe dekriptimit.
-Te dy metodat e enkriptimit dhe dekriptimi ekzekutohen, si dhe ne teresi detyra implementohet si console me inicim permes parametrave dhe si desktop app. Realizimin e tyre e kemi bere me ane te gjuhes programuese Java.
+Te dy metodat e enkriptimit dhe dekriptimi ekzekutohen, si dhe ne teresi detyra implementohet si console me inicim permes parametrave dhe si desktop app. Realizimin e tyre e kemi bere me ane te gjuhes programuese Java.<br/>
 **Gjithsesi ka metoda me eficiente per te zhvilluar kodin me me pak loop-s.**
 
 ## Realizimi
