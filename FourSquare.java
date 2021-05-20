@@ -179,3 +179,17 @@ public static void main(String[] args) {
 }
 
 //Celesi 1: ZGPTFOIHMUWDRCNYKEQAXVSBL ; Celesi 2: MFNBDCRHSAXYOGVITUEWLQZKP
+
+/*
+a b c d e    Z G P T F
+f g h i k      O I H M U
+l m n o p      W D R C N
+q r s t u      Y K E Q A
+v w x y z      X V S B L
+
+M F N B D      a b c d e
+C R H S A      f g h i k
+X Y O G V      l m n o p
+I T U E W      q r s t u
+L Q Z K P      v w x y z
+*/
