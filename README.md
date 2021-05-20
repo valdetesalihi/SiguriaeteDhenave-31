@@ -29,6 +29,11 @@ Implementimi final i kodit permban tri variabla hyrese: teksti, qelesi1 dhe qele
 - [x] Implementimi si dekstop app
 - [x] Ekzekutimi i te dy metodave asaj te enkriptimit dhe asaj te dekriptimit
 
+<br/>
+![GUI](C:\Users\LENOVO\OneDrive\Desktop\SiguriaeteDhenave-31\GUI.png)
+<br/>
+![Konzole](C:\Users\LENOVO\OneDrive\Desktop\SiguriaeteDhenave-31\KONZOLE.png)
+
 # Referencat
 1. https://stackoverflow.com/questions/33703685/four-square-cipher-encryption-code
 2. https://www.youtube.com/watch?v=PwHkSTh5uB4&t=4s
