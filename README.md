@@ -38,3 +38,15 @@ Implementimi final i kodit permban tri variabla hyrese: teksti, qelesi1 dhe qele
  
 
 
+# Faza 1
+
+> Serveri
+1. Të shkruhet një UDP server i autorizimit i cili ruan shfrytezuesit në mënyrë të sigurt
+në bazë të shënimeve MYSQL duke shfrytëzuar teknikat e salted hashing për ruajtje të fjalëkalimeve.
+2. Përveç informatave të shfrytëzuesit, serveri i autorizimit ruan të dhënat e shpenzimeve
+(lloji fatures, viti, muaji, vlera ne euro) për shfrytëzuesin. Shfrytëzuesi duhet ta ketë së
+paku edhe një atribut shtesë sipas dëshirës.
+3. Serveri i autorizimit ka një çelës publik X.509 i cili dihet paraprak- isht nga të gjitha
+palët tjera.
+
+> Klienti
