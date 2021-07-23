@@ -48,7 +48,7 @@ në bazë të shënimeve MYSQL.
 3. Serveri i autorizimit ka një çelës publik X.509.
 
 > Klienti
-Të shkruhet një klient i cili ofron dy shërbime: krijimi i shfrytëzuesve, qasja në llogarinë e
+1. Të shkruhet një klient i cili ofron dy shërbime: krijimi i shfrytëzuesve, qasja në llogarinë e
 shfrytëzuesve ekzistues dhe regjistrimi i shpenzimeve.
 
 ## Komunikimi klient-server
@@ -57,3 +57,5 @@ Të gjitha kërkesat që klienti i dërgon te serveri i autorizimit duhet të je
 # Implementimi
 Nuk eshte i plote!
 
+# Faza 3
+Shtimi i çelësit publik...
