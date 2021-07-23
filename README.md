@@ -41,23 +41,15 @@ Implementimi final i kodit permban tri variabla hyrese: teksti, qelesi1 dhe qele
 # Faza 2
 
 > Serveri
-1. Të shkruhet një UDP server i autorizimit i cili ruan shfrytezuesit në mënyrë të sigurt
-në bazë të shënimeve MYSQL duke shfrytëzuar teknikat e salted hashing për ruajtje të fjalëkalimeve.
+1. UDP server i autorizimit i cili ruan shfrytezuesit në mënyrë të sigurt
+në bazë të shënimeve MYSQL.
 2. Përveç informatave të shfrytëzuesit, serveri i autorizimit ruan të dhënat e shpenzimeve
-(lloji fatures, viti, muaji, vlera ne euro) për shfrytëzuesin. Shfrytëzuesi duhet ta ketë së
-paku edhe një atribut shtesë sipas dëshirës.
-3. Serveri i autorizimit ka një çelës publik X.509 i cili dihet paraprak- isht nga të gjitha
-palët tjera.
+(lloji fatures, viti, muaji, vlera ne euro) për shfrytëzuesin.
+3. Serveri i autorizimit ka një çelës publik X.509.
 
 > Klienti
-1. Të shkruhet një klient i cili ofron dy shërbime: krijimi i shfrytëzuesve, qasja në llogarinë e
+Të shkruhet një klient i cili ofron dy shërbime: krijimi i shfrytëzuesve, qasja në llogarinë e
 shfrytëzuesve ekzistues dhe regjistrimi i shpenzimeve.
-2. Procesi i regjistrimit shkon duke ia dërguar të dhënat e shfrytëzuesit serverit të
-autorizimit i cili kthen përgjigjen përkatëse (OK ose ERROR).
-3. Procesi i qasjes (login) shkon duke ia dërguar llogarinë dhe fjalëkalimin serverit të
-autorizimit i cili kthen përgjigjen përkatëse (OK ose ERROR).
-4. Në rast të qasjes (login) me sukses serveri i autorizimit duhet ta kthejë një JWT të nënshkruar me çelësin e vet privat në të cilin gjenden faktet rreth shfrytëzuesit (id, të dhënat e shfrytëzuesit).
-5. Klienti duhet ta vërtetojë nënshkrimin e serverit dhe në rast suksesi duhet ta shfaqë një pamje ku gjenden faktet rreth shfrytëzuesit. Në rast të dështimit të validimit të nënshkrimit të shfaqet mesazhi përkatës i gabimit.
 
 ## Komunikimi klient-server
 Të gjitha kërkesat që klienti i dërgon te serveri i autorizimit duhet të jenë të enkriptuara me CBC DES.
