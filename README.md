@@ -62,3 +62,6 @@ autorizimit i cili kthen përgjigjen përkatëse (OK ose ERROR).
 ## Komunikimi klient-server
 Të gjitha kërkesat që klienti i dërgon te serveri i autorizimit duhet të jenë të enkriptuara me CBC DES.
 
+# Implementimi
+Nuk eshte i plote!
+
