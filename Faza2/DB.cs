@@ -13,7 +13,7 @@ namespace Server
 
         // Create a connection with mysql
 
-        private MySqlConnection connection = new MySqlConnection("Database=user_db;Data Source=localhost;User Id=root;Password=1234");
+        private MySqlConnection connection = new MySqlConnection("Database=siguri;Data Source=localhost;User Id=root;Password=;");
 
         //krijo nje funksion me hap konektimin
         public void openConnection()
