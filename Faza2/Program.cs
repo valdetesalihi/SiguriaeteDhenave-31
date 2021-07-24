@@ -93,7 +93,7 @@ namespace Server
 
                     //**********************************
 
-                    string connectionString = @"server=localhost;userid=root;password=1234;database=user_db";
+                    string connectionString = @"server=localhost;userid=root;password=;database=siguri";
 
                     MySqlConnection connection = null;
                     try
