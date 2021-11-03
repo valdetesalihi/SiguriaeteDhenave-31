@@ -58,4 +58,4 @@ Të gjitha kërkesat që klienti i dërgon te serveri i autorizimit duhet të je
 Nuk eshte i plote!
 
 # Faza 3
-Shtimi i çelësit publik...
+Çlësi publik
